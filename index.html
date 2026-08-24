@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>牛菲 | AI 产品运营作品集</title>
-  <meta name="description" content="牛菲的 AI 产品运营作品集，展示得物 AI Skill 优化、自媒体增长运营、RAG 知识库问答系统与 AI 文本分类项目。">
+  <title>牛菲 | AI × 业务运营作品集</title>
+  <meta name="description" content="牛菲的 AI 与业务运营作品集：扁鹊工单优化闭环、数据看板验收、自媒体增长运营、RAG 知识库问答与 AI 文本分类。">
+  <meta name="theme-color" content="#102c3a">
+  <meta property="og:title" content="牛菲 | AI × 业务运营作品集">
+  <meta property="og:description" content="从工单洞察到 AI 优化闭环，从内容增长到数据复盘。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://niufei-lab.github.io/NFdemo/assets/portfolio-preview.png">
   <style>
     :root {
       --ink: #17202a;
@@ -448,6 +453,66 @@
       background: var(--soft);
     }
 
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .proof-card {
+      min-width: 0;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 12px 30px rgba(18, 32, 51, 0.06);
+    }
+
+    .proof-card img {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      object-position: top center;
+      background: var(--soft);
+    }
+
+    .proof-card.wide img {
+      object-fit: contain;
+      padding: 8px;
+    }
+
+    .proof-card figcaption {
+      padding: 11px 12px 13px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .proof-card figcaption strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .method-strip {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .method-strip span {
+      padding: 10px;
+      border: 1px solid rgba(24, 181, 122, 0.18);
+      border-radius: var(--radius);
+      color: #1b5f4a;
+      background: rgba(24, 181, 122, 0.07);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -546,7 +611,9 @@
       .stats,
       .skills-grid,
       .evidence,
-      .project-media {
+      .project-media,
+      .proof-grid,
+      .method-strip {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -576,7 +643,9 @@
       .stats,
       .skills-grid,
       .evidence,
-      .project-media {
+      .project-media,
+      .proof-grid,
+      .method-strip {
         grid-template-columns: 1fr;
       }
 
@@ -605,11 +674,12 @@
       <div class="nav-inner">
         <a class="brand" href="#top" aria-label="返回首页">
           <span class="mark">NF</span>
-          <span>牛菲 | AI 产品运营</span>
+          <span>牛菲 | AI × 业务运营</span>
         </a>
         <nav class="nav-links" aria-label="页面导航">
           <a href="#about">个人介绍</a>
           <a href="#experience">项目经历</a>
+          <a href="#self-media">增长作品</a>
           <a href="#skills">能力结构</a>
           <a href="#portfolio">作品集</a>
         </nav>
@@ -620,23 +690,24 @@
       <section class="hero" aria-labelledby="hero-title">
         <div>
           <div class="eyebrow">江南大学 计算机科学与技术 · 2027 届</div>
-          <h1 id="hero-title">牛菲的 AI 产品运营作品集</h1>
+          <h1 id="hero-title">让 AI 真正进入<br>业务闭环</h1>
           <p class="hero-copy">
-            我关注数字化与 AI 产品在真实业务场景里的落地，擅长把用户问题、业务流程、数据反馈和技术实现整理成可执行的产品运营方案。
+            我是牛菲。计算机背景，持续实践 AI 产品运营、B 端业务分析与增长运营；擅长把零散问题转成可追踪、可验证、可复用的解决方案。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="assets/NiuFei-AI-Product-Operations-Portfolio.pdf" target="_blank" rel="noopener">打开作品集 PDF</a>
             <a class="button" href="#experience">查看项目经历</a>
+            <a class="button" href="#self-media">查看增长作品</a>
             <a class="button" href="mailto:495372030@qq.com">联系邮箱</a>
           </div>
           <div class="stats" aria-label="关键成果">
             <div class="stat">
-              <strong>3w+</strong>
-              <span>私域用户沉淀</span>
+              <strong>60+</strong>
+              <span>扁鹊优化点梳理</span>
             </div>
             <div class="stat">
-              <strong>1000+</strong>
-              <span>单日最高净增</span>
+              <strong>4,267</strong>
+              <span>增长复盘周期净增</span>
             </div>
             <div class="stat">
               <strong>4 类</strong>
@@ -752,27 +823,26 @@
               </div>
               <div class="case-body">
                 <ul>
-                  <li>围绕“内容引流 - 用户关注 - 菜单分流 - 项目转化”搭建公众号与私域运营链路，累计沉淀私域用户超 3 万。</li>
+                  <li>围绕“内容引流 - 用户关注 - 私域承接 - 项目转化”搭建公众号与私域运营链路，并用后台真实数据持续复盘新增、取关、净增和累计关注。</li>
                   <li>负责内容合作方筛选、报价沟通、投放排期与转化复盘，结合账号体量、合作形式和历史转化表现制定分级投放策略。</li>
                   <li>搭建业务数据跟踪体系，按账号、渠道、内容主题、点击、扫码、转化等维度记录投放表现，并将合作筛选、排期执行、结算验收流程沉淀为 SOP 与表格模板。</li>
                 </ul>
                 <div class="evidence">
                   <div>
-                    <strong>3w+</strong>
-                    <span>私域用户</span>
+                    <strong>4,267</strong>
+                    <span>4/5–5/7 周期净增</span>
                   </div>
                   <div>
-                    <strong>1000+</strong>
+                    <strong>894</strong>
+                    <span>单日最高新增</span>
+                  </div>
+                  <div>
+                    <strong>719</strong>
                     <span>单日最高净增</span>
                   </div>
-                  <div>
-                    <strong>3000+</strong>
-                    <span>单周流水</span>
-                  </div>
                 </div>
-                <div class="project-media">
-                  <img src="assets/self-media-growth.jpg" alt="自媒体用户增长数据截图">
-                  <img src="assets/portfolio-preview.png" alt="作品集封面局部预览">
+                <div class="method-strip" aria-label="增长运营方法">
+                  <span>内容排期</span><span>渠道协作</span><span>数据归因</span><span>复盘沉淀</span>
                 </div>
               </div>
             </article>
@@ -828,6 +898,33 @@
         </div>
       </section>
 
+      <section id="self-media" class="portfolio-band">
+        <div class="section-inner">
+          <div class="section-title">
+            <h2>自媒体增长作品</h2>
+            <p>从后台截图取数，到 Excel / Power BI 复盘，再到合作排期与 SOP 沉淀，展示的是一套可复用的增长运营方法。</p>
+          </div>
+          <div class="proof-grid">
+            <figure class="proof-card wide">
+              <img src="assets/self-media-dashboard.jpg" alt="自媒体账号用户增长数据复盘看板">
+              <figcaption><strong>增长数据看板</strong>4/5–5/7 累计关注 3,710→7,977，周期净增 4,267。</figcaption>
+            </figure>
+            <figure class="proof-card">
+              <img src="assets/growth-record-may.png" alt="5 月用户增长后台记录">
+              <figcaption><strong>后台数据证据</strong>保留每日新增、取关、净增与累计关注。</figcaption>
+            </figure>
+            <figure class="proof-card">
+              <img src="assets/acquisition-channels.png" alt="用户关注来源分析">
+              <figcaption><strong>来源分析</strong>识别搜一搜、文章页等主要获客来源。</figcaption>
+            </figure>
+            <figure class="proof-card">
+              <img src="assets/growth-record-july.png" alt="7 月新账号冷启动数据记录">
+              <figcaption><strong>冷启动复盘</strong>独立观察新周期的增长与用户画像。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section id="skills">
         <div class="section-inner">
           <div class="section-title">
@@ -861,7 +958,7 @@
             <div class="portfolio-copy">
               <h3>牛菲-AI 产品运营作品集</h3>
               <p>
-                作品集聚焦蔚来“AI 产品运营”岗位 JD，突出数字化 / AI 产品全生命周期运营、用户洞察与数据驱动、AI 工具探索、内容传播和跨团队协作。
+                作品集聚焦 AI 产品运营与 B 端产品方向，突出工单洞察、数据口径、AI 工具落地、用户增长和跨团队协作。
               </p>
               <p>
                 建议投递时同时上传 PDF 附件，并把本页面作为 GitHub Pages 个人展示链接填写在“作品链接 / 个人主页 / 项目经历展示”一栏。
